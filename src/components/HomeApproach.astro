@@ -1,0 +1,49 @@
+---
+import SFH from "../assets/sripuram-farmhouse.webp";
+import Button from "./ui/Button.astro";
+---
+
+<div
+	class="bg-tan-900 bg-cover bg-center bg-no-repeat h-auto py-48"
+	style={{
+		// use the src property of the image object
+		backgroundImage: `url(${SFH.src})`,
+		// other styles
+		backgroundPosition: "center",
+		backgroundSize: "cover",
+		backgroundRepeat: "no-repeat",
+		width: "100%",
+		height: "70vh",
+		display: "flex",
+		alignItems: "center",
+		justifyContent: "center",
+	}}
+>
+	<div
+		class="flex flex-col justify-center items-center sm:max-w-screen-lg px-2 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto bg-jet-300 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-50 saturate-100 backdrop-contrast-100 sm:rounded-xl"
+	>
+		<h2
+			class="font-semibold text-tan-900 text-3xl md:text-4xl lg:text-5xl text-center text-shadow shadow-jet-100"
+		>
+			Our Design Approach
+		</h2>
+		<p
+			class="mt-6 text-tan-900 px-4 max-w-2xl mx-auto leading-8 text-lg text-shadow shadow-jet-100"
+		>
+			At Styka, we believe in the power of design to elevate experiences and
+			enrich lives. Our philosophy is rooted in attentive listening, profound
+			collaboration, and a relentless pursuit of excellence. We understand that
+			every space has a story to tell and every client has a unique vision.
+			That&#39;s why we prioritize understanding your needs, preferences, and
+			aspirations, ensuring that our designs not only meet but exceed your
+			expectations.
+		</p>
+		<Button style="primary" class="my-5" href="/contact">Learn More</Button>
+		<!-- <a
+			href="/services"
+			class="inline-flex items-center justify-center px-5 py-3 my-5 text-base font-medium text-center text-gray-900 border border-tan rounded-lg bg-tan hover:bg-tan-300 focus:ring-4 focus:ring-tan-300"
+		>
+			Learn More
+		</a> -->
+	</div>
+</div>

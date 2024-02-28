@@ -1,0 +1,124 @@
+---
+import { Image } from "astro:assets";
+import GCFH from "../assets/gcfh/gcfh1.webp";
+import KFH from "../assets/kfh/kfh1.webp";
+import MNH from "../assets/mnh/mnh2.webp";
+import "../styles/globals.css";
+---
+
+<div class="z-0 hero-bg-curtain">
+	<div class="z-10 bg-gradient-to-b from-transparent to-tan-900">
+		<div class="mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
+			<div class="max-w-screen-xl text-center mx-auto">
+				<p
+					class="inline-block text-sm font-medium bg-clip-text bg-gradient-to-l text-gray-900"
+				>
+					Portfolio
+				</p>
+
+				<div class="mt-5 max-w-2xl mx-auto">
+					<h2
+						class="text-center font-semibold text-gray-900 text-3xl md:text-4xl lg:text-5xl"
+					>
+						Featured Projects
+					</h2>
+				</div>
+
+				<div
+					class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-3"
+				>
+					<a href="/portfolio/architecture/gandipet-container-farmhouse">
+						<div
+							class="flex items-end overflow-hidden bg-cover bg-center rounded-lg h-96"
+							style={{
+								// use the src property of the image object
+								backgroundImage: `url(${GCFH.src})`,
+								// other styles
+								backgroundPosition: "center",
+								backgroundSize: "cover",
+								backgroundRepeat: "no-repeat",
+								width: "100%",
+								height: "30vh",
+							}}
+						>
+							<div
+								class="w-full px-8 py-4 overflow-hidden rounded-b-lg backdrop-blur-sm bg-tan-900/60"
+							>
+								<h2
+									class="mt-4 text-base font-semibold text-gray-800 capitalize"
+								>
+									Gandipet Container Farmhouse
+								</h2>
+								<p class="mt-2 text-sm tracking-wider text-tan-200 uppercase">
+									Architecture
+								</p>
+							</div>
+						</div>
+					</a>
+					<a href="/portfolio/architecture/keesara-farmhouse">
+						<div
+							class="flex items-end overflow-hidden bg-cover bg-center rounded-lg h-96"
+							style={{
+								// use the src property of the image object
+								backgroundImage: `url(${KFH.src})`,
+								// other styles
+								backgroundPosition: "center",
+								backgroundSize: "cover",
+								backgroundRepeat: "no-repeat",
+								width: "100%",
+								height: "30vh",
+							}}
+						>
+							<div
+								class="w-full px-8 py-4 overflow-hidden rounded-b-lg backdrop-blur-sm bg-tan-900/60"
+							>
+								<h2
+									class="mt-4 text-base font-semibold text-gray-800 capitalize"
+								>
+									Keesara Farmhouse
+								</h2>
+								<p class="mt-2 text-sm tracking-wider text-tan-200 uppercase">
+									Architecture
+								</p>
+							</div>
+						</div>
+					</a>
+					<a href="/portfolio/architecture/manne-house">
+						<div
+							class="flex items-end overflow-hidden bg-cover bg-center rounded-lg h-96"
+							style={{
+								// use the src property of the image object
+								backgroundImage: `url(${MNH.src})`,
+								// other styles
+								backgroundPosition: "center",
+								backgroundSize: "cover",
+								backgroundRepeat: "no-repeat",
+								width: "100%",
+								height: "30vh",
+							}}
+						>
+							<div
+								class="w-full px-8 py-4 overflow-hidden rounded-b-lg backdrop-blur-sm bg-tan-900/60"
+							>
+								<h2
+									class="mt-4 text-base font-semibold text-gray-800 capitalize"
+								>
+									Manne House
+								</h2>
+								<p class="mt-2 text-sm tracking-wider text-tan-200 uppercase">
+									Architecture
+								</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<a
+					href="/portfolio"
+					class="inline-flex items-center justify-center px-5 py-3 my-5 text-base font-medium text-center text-gray-900 border border-tan rounded-lg bg-tan hover:bg-tan-300 focus:ring-4 focus:ring-tan-300"
+				>
+					Load More
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
