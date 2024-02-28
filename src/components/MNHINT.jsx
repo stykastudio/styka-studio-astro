@@ -2,10 +2,25 @@ import { useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/styles.css";
-import mnh1 from "../assets/mnh/mnh1.webp";
-import mnh2 from "../assets/mnh/mnh2.webp";
-import mnh3 from "../assets/mnh/mnh3.webp";
-import mnh4 from "../assets/mnh/mnh4.webp";
+import MNHINT1 from "../assets/mnh/int/mnhint1.webp";
+import MNHINT2 from "../assets/mnh/int/mnhint2.webp";
+import MNHINT3 from "../assets/mnh/int/mnhint3.webp";
+import MNHINT4 from "../assets/mnh/int/mnhint4.webp";
+import MNHINT5 from "../assets/mnh/int/mnhint5.webp";
+import MNHINT6 from "../assets/mnh/int/mnhint6.webp";
+import MNHINT7 from "../assets/mnh/int/mnhint7.webp";
+import MNHINT8 from "../assets/mnh/int/mnhint8.webp";
+import MNHINT9 from "../assets/mnh/int/mnhint9.webp";
+import MNHINT10 from "../assets/mnh/int/mnhint10.webp";
+import MNHINT11 from "../assets/mnh/int/mnhint11.webp";
+import MNHINT12 from "../assets/mnh/int/mnhint12.webp";
+import MNHINT13 from "../assets/mnh/int/mnhint13.webp";
+import MNHINT14 from "../assets/mnh/int/mnhint14.webp";
+import MNHINT15 from "../assets/mnh/int/mnhint15.webp";
+import MNHINT16 from "../assets/mnh/int/mnhint16.webp";
+import MNHINT17 from "../assets/mnh/int/mnhint17.webp";
+import MNHINT18 from "../assets/mnh/int/mnhint18.webp";
+import MNHINT19 from "../assets/mnh/int/mnhint19.webp";
 
 export default function MNHPage() {
 	const [open, setOpen] = useState(false);
@@ -14,16 +29,61 @@ export default function MNHPage() {
 	const galleryTab = [
 		// you can add more images if you want
 		{
-			imageUrl: mnh1.src,
+			imageUrl: MNHINT1.src,
 		},
 		{
-			imageUrl: mnh2.src,
+			imageUrl: MNHINT2.src,
 		},
 		{
-			imageUrl: mnh3.src,
+			imageUrl: MNHINT3.src,
 		},
 		{
-			imageUrl: mnh4.src,
+			imageUrl: MNHINT4.src,
+		},
+		{
+			imageUrl: MNHINT5.src,
+		},
+		{
+			imageUrl: MNHINT6.src,
+		},
+		{
+			imageUrl: MNHINT7.src,
+		},
+		{
+			imageUrl: MNHINT8.src,
+		},
+		{
+			imageUrl: MNHINT9.src,
+		},
+		{
+			imageUrl: MNHINT10.src,
+		},
+		{
+			imageUrl: MNHINT11.src,
+		},
+		{
+			imageUrl: MNHINT12.src,
+		},
+		{
+			imageUrl: MNHINT13.src,
+		},
+		{
+			imageUrl: MNHINT14.src,
+		},
+		{
+			imageUrl: MNHINT15.src,
+		},
+		{
+			imageUrl: MNHINT16.src,
+		},
+		{
+			imageUrl: MNHINT17.src,
+		},
+		{
+			imageUrl: MNHINT18.src,
+		},
+		{
+			imageUrl: MNHINT19.src,
 		},
 	];
 

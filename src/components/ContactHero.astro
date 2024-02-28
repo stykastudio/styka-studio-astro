@@ -1,0 +1,93 @@
+---
+import { AtSign, MapPin, Phone } from "lucide-astro";
+import "../styles/globals.css";
+---
+
+<div class="bg-gradient-to-b from-tan-900 to-tan-600 hero-bg-texture">
+	<section class="max-w-screen-xl mx-auto">
+		<div class="mx-auto text-center pt-8 pb-4 px-2">
+			<h1
+				class="text-4xl font-bold tracking-tight leading-none md:text-5xl xl:text-6xl"
+			>
+				Let&#39;s Talk
+			</h1>
+
+			<p class="mt-3 text-lg text-gray-600">
+				Our team would love to hear from you.
+			</p>
+		</div>
+
+		<div class="container px-6 pt-2 pb-12 mx-auto">
+			<div class="grid grid-cols-1 gap-12 mt-10 lg:grid-cols-3">
+				<div class="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-1">
+					<div>
+						<div class="flex gap-2 items-center">
+							<span
+								class="inline-block p-3 text-tan-100 rounded-full ring-1 ring-tan-100"
+							>
+								<AtSign />
+							</span>
+
+							<h3 class="text-xl font-semibold text-gray-800">Email</h3>
+						</div>
+						<p class="mt-2 text-base text-gray-600">
+							Our friendly team is here to help.
+						</p>
+						<p class="mt-2 text-lg text-jet-200">hello@styka.in</p>
+					</div>
+
+					<div>
+						<div class="flex gap-2 items-center">
+							<span
+								class="inline-block p-3 text-tan-100 rounded-full ring-1 ring-tan-100"
+							>
+								<MapPin />
+							</span>
+
+							<h3 class="text-xl font-semibold text-gray-800">Office</h3>
+						</div>
+						<p class="mt-2 text-base text-gray-600">
+							Come say hello at our Studio Office.
+						</p>
+						<p class="mt-2 text-lg text-jet-200">
+							5th Floor, RR Plaza,
+							<br /> Durgam Cheruvu Rd, Madhapur,
+							<br /> Hyderabad -81
+						</p>
+					</div>
+
+					<div>
+						<div class="flex gap-2 items-center">
+							<span
+								class="inline-block p-3 text-tan-100 rounded-full ring-1 ring-tan-100"
+							>
+								<Phone />
+							</span>
+
+							<h3 class="text-xl font-semibold text-gray-800">Phone</h3>
+						</div>
+						<p class="mt-2 text-base text-gray-600">
+							Mon-Sat from 10am to 6pm.
+						</p>
+						<p class="mt-2 text-lg text-jet-200">77996 20614</p>
+					</div>
+				</div>
+
+				<div
+					class="overflow-hidden rounded-lg lg:col-span-2 h-96 lg:h-auto order-first shadow-2xl border border-t border-jet-800"
+				>
+					<iframe
+						width="100%"
+						height="100%"
+						frame-border="0"
+						title="map"
+						margin-height="0"
+						margin-width="0"
+						scrolling="no"
+						src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15225.633420974838!2d78.3902441!3d17.4401585!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb916dc2086717%3A0x92cf3d34da4bc74!2sSTYKA%20Studio!5e0!3m2!1sen!2sin!4v1708071993652!5m2!1sen!2sin"
+					></iframe>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>

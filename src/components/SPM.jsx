@@ -2,28 +2,32 @@ import { useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/styles.css";
-import mnh1 from "../assets/mnh/mnh1.webp";
-import mnh2 from "../assets/mnh/mnh2.webp";
-import mnh3 from "../assets/mnh/mnh3.webp";
-import mnh4 from "../assets/mnh/mnh4.webp";
+import spm1 from ".../../../assets/spm/spm1.webp";
+import spm2 from ".../../../assets/spm/spm2.webp";
+import spm3 from ".../../../assets/spm/spm3.webp";
+import spm4 from ".../../../assets/spm/spm4.webp";
+import spm5 from ".../../../assets/spm/spm5.webp";
 
-export default function MNHPage() {
+export default function SPMPage() {
 	const [open, setOpen] = useState(false);
 	const [image, setImage] = useState("");
 
 	const galleryTab = [
 		// you can add more images if you want
 		{
-			imageUrl: mnh1.src,
+			imageUrl: spm1.src,
 		},
 		{
-			imageUrl: mnh2.src,
+			imageUrl: spm2.src,
 		},
 		{
-			imageUrl: mnh3.src,
+			imageUrl: spm3.src,
 		},
 		{
-			imageUrl: mnh4.src,
+			imageUrl: spm4.src,
+		},
+        {
+			imageUrl: spm5.src,
 		},
 	];
 
@@ -45,7 +49,7 @@ export default function MNHPage() {
 			<div className="max-w-screen-xl mx-auto bg-tan-900 ">
 				<div className=" bg-tan-900 ">
 					<h2 className="py-8 text-4xl tracking-tight font-extrabold text-gray-900 bg-tan-900  text-center">
-						Manne House
+						Sripuram
 					</h2>
 					<div className="flex flex-col md:grid md:grid-cols-2 h-full gap-4 flex-wrap mx-2 md:mx-0 bg-transparent ">
 						{galleryTab.map((x, index) => {

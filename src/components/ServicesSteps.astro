@@ -1,0 +1,149 @@
+---
+import {
+	Handshake,
+	PencilLine,
+	PencilRuler,
+	DraftingCompass,
+} from "lucide-astro";
+import { Image } from "astro:assets";
+import ConversationImage from "../assets/undraw_interview_re_e5jn.svg";
+import ConceptImage from "../assets/undraw_thought_process_re_om58.svg";
+import SchematicImage from "../assets/undraw_design_sprint_re_tke3.svg";
+import DesignImage from "../assets/undraw_designer_girl_re_h54c.svg";
+---
+
+<section
+	class="bg-gradient-to-b from-tan-900 to-tan-600 py-12 sm:py-16 lg:py-20 xl:py-24"
+>
+	<div class="mx-auto max-w-screen-xl px-4">
+		<div class="text-center">
+			<p class="text-sm font-bold uppercase tracking-widest text-jet-500">
+				How It Works
+			</p>
+			<h2
+				class="mt-6 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl"
+			>
+				Our Design Process
+			</h2>
+			{
+				/* <p class="mx-auto mt-4 max-w-2xl text-lg font-normal text-jet-500 lg:text-xl lg:leading-8">
+						Create your own blog with us and launch it with just 4 easy steps
+					</p> */
+			}
+		</div>
+		<ul
+			class="mx-auto mt-12 grid max-w-md grid-cols-1 gap-10 sm:mt-16 lg:mt-20 lg:max-w-screen-xl lg:grid-cols-4"
+		>
+			<li class="flex-start group relative flex lg:flex-col">
+				<span
+					class="absolute left-[18px] top-14 h-[calc(100%_-_32px)] w-px bg-jet-400 lg:right-0 lg:left-auto lg:top-[18px] lg:h-px lg:w-[calc(100%_-_72px)]"
+					aria-hidden="true"></span>
+				<div
+					class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-jet-300 bg-jet-50 transition-all duration-200 text-jet hover:text-tan group-hover:border-jet group-hover:bg-jet group-hover:text-tan-600"
+				>
+					<Handshake />
+				</div>
+				<div class="ml-6 lg:ml-0 lg:mt-10">
+					<h3
+						class="text-xl font-bold text-gray-900 before:mb-2 before:block before:font-mono before:text-sm before:text-jet-500"
+					>
+						Meet & Greet
+					</h3>
+					<Image
+						class="h-72 lg:w-full py-4"
+						src={ConversationImage}
+						alt="dashboard image"
+					/>
+					<p class="mt-2 text-base text-jet-500">
+						During our initial consultation, we prioritize understanding your
+						needs and project scope through open communication. We then provide
+						a detailed quotation, outlining proposed design services and budget
+						estimates for transparency.
+					</p>
+				</div>
+			</li>
+			<li class="flex-start group relative flex lg:flex-col">
+				<span
+					class="absolute left-[18px] top-14 h-[calc(100%_-_32px)] w-px bg-jet-400 lg:right-0 lg:left-auto lg:top-[18px] lg:h-px lg:w-[calc(100%_-_72px)]"
+					aria-hidden="true"></span>
+				<div
+					class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-jet-300 bg-jet-50 transition-all duration-200 text-jet hover:text-tan group-hover:border-jet group-hover:bg-jet group-hover:text-tan-600"
+				>
+					<PencilLine />
+				</div>
+				<div class="ml-6 lg:ml-0 lg:mt-10">
+					<h3
+						class="text-xl font-bold text-gray-900 before:mb-2 before:block before:font-mono before:text-sm before:text-jet-500"
+					>
+						Conceptual Design
+					</h3>
+					<Image
+						class="h-72 lg:w-full py-4"
+						src={ConceptImage}
+						alt="dashboard image"
+					/>
+					<p class="mt-2 text-base text-jet-500">
+						We meticulously design floor plans, integrating dimensions and
+						structural elements, and craft mood boards to explore styles and
+						furniture options. Our collaborative process involves discussing
+						finish, lighting, and fixture choices to elevate the space&#39;s
+						aesthetic and functionality.
+					</p>
+				</div>
+			</li>
+			<li class="flex-start group relative flex lg:flex-col">
+				<span
+					class="absolute left-[18px] top-14 h-[calc(100%_-_32px)] w-px bg-jet-400 lg:right-0 lg:left-auto lg:top-[18px] lg:h-px lg:w-[calc(100%_-_72px)]"
+					aria-hidden="true"></span>
+				<div
+					class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-jet-300 bg-jet-50 transition-all duration-200 text-jet hover:text-tan group-hover:border-jet group-hover:bg-jet group-hover:text-tan-600"
+				>
+					<DraftingCompass />
+				</div>
+				<div class="ml-6 lg:ml-0 lg:mt-10">
+					<h3
+						class="text-xl font-bold text-gray-900 before:mb-2 before:block before:font-mono before:text-sm before:text-jet-500"
+					>
+						Schematic Design
+					</h3>
+					<Image
+						class="h-72 lg:w-full py-4"
+						src={SchematicImage}
+						alt="dashboard image"
+					/>
+					<p class="mt-2 text-base text-jet-500">
+						We create technical drawings and detailed designs, ensuring
+						alignment with the design vision and client approval, while
+						facilitating on-site adjustments and demonstrating furniture scale
+						in designated spaces.
+					</p>
+				</div>
+			</li>
+			<li class="flex-start group relative flex lg:flex-col">
+				<div
+					class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-jet-300 bg-jet-50 transition-all duration-200 text-jet hover:text-tan group-hover:border-jet group-hover:bg-jet group-hover:text-tan-600"
+				>
+					<PencilRuler />
+				</div>
+				<div class="ml-6 lg:ml-0 lg:mt-10">
+					<h3
+						class="text-xl font-bold text-gray-900 before:mb-2 before:block before:font-mono before:text-sm before:text-jet-500"
+					>
+						Design Development
+					</h3>
+					<Image
+						class="h-72 lg:w-full py-4"
+						src={DesignImage}
+						alt="dashboard image"
+					/>
+					<p class="mt-2 text-base text-jet-500">
+						We model designs, create photorealistic renders, refine the budget
+						and material selections based on consultations and modifications,
+						and produce final renders reflecting these changes for a complete
+						showcase of the design.
+					</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+</section>

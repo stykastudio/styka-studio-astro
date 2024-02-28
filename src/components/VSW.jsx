@@ -2,10 +2,29 @@ import { useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/styles.css";
-import mnh1 from "../assets/mnh/mnh1.webp";
-import mnh2 from "../assets/mnh/mnh2.webp";
-import mnh3 from "../assets/mnh/mnh3.webp";
-import mnh4 from "../assets/mnh/mnh4.webp";
+import VSW1 from "../assets/vsw/vsw1.webp";
+import VSW2 from "../assets/vsw/vsw2.webp";
+import VSW3 from "../assets/vsw/vsw3.webp";
+import VSW4 from "../assets/vsw/vsw4.webp";
+import VSW5 from "../assets/vsw/vsw5.webp";
+import VSW6 from "../assets/vsw/vsw6.webp";
+import VSW7 from "../assets/vsw/vsw7.webp";
+import VSW8 from "../assets/vsw/vsw8.webp";
+import VSW9 from "../assets/vsw/vsw9.webp";
+import VSW10 from "../assets/vsw/vsw10.webp";
+import VSW11 from "../assets/vsw/vsw11.webp";
+import VSW12 from "../assets/vsw/vsw12.webp";
+import VSW13 from "../assets/vsw/vsw13.webp";
+import VSW14 from "../assets/vsw/vsw14.webp";
+import VSW15 from "../assets/vsw/vsw15.webp";
+import VSW16 from "../assets/vsw/vsw16.webp";
+import VSW17 from "../assets/vsw/vsw17.webp";
+import VSW18 from "../assets/vsw/vsw18.webp";
+import VSW19 from "../assets/vsw/vsw19.webp";
+import VSW20 from "../assets/vsw/vsw20.webp";
+import VSW21 from "../assets/vsw/vsw21.webp";
+import VSW22 from "../assets/vsw/vsw22.webp";
+import VSW23 from "../assets/vsw/vsw23.webp";
 
 export default function MNHPage() {
 	const [open, setOpen] = useState(false);
@@ -14,16 +33,73 @@ export default function MNHPage() {
 	const galleryTab = [
 		// you can add more images if you want
 		{
-			imageUrl: mnh1.src,
+			imageUrl: VSW1.src,
 		},
 		{
-			imageUrl: mnh2.src,
+			imageUrl: VSW2.src,
 		},
 		{
-			imageUrl: mnh3.src,
+			imageUrl: VSW3.src,
 		},
 		{
-			imageUrl: mnh4.src,
+			imageUrl: VSW4.src,
+		},
+		{
+			imageUrl: VSW5.src,
+		},
+		{
+			imageUrl: VSW6.src,
+		},
+		{
+			imageUrl: VSW7.src,
+		},
+		{
+			imageUrl: VSW8.src,
+		},
+		{
+			imageUrl: VSW9.src,
+		},
+		{
+			imageUrl: VSW10.src,
+		},
+		{
+			imageUrl: VSW11.src,
+		},
+		{
+			imageUrl: VSW12.src,
+		},
+		{
+			imageUrl: VSW13.src,
+		},
+		{
+			imageUrl: VSW14.src,
+		},
+		{
+			imageUrl: VSW15.src,
+		},
+		{
+			imageUrl: VSW16.src,
+		},
+		{
+			imageUrl: VSW17.src,
+		},
+		{
+			imageUrl: VSW18.src,
+		},
+		{
+			imageUrl: VSW19.src,
+		},
+		{
+			imageUrl: VSW20.src,
+		},
+		{
+			imageUrl: VSW21.src,
+		},
+		{
+			imageUrl: VSW22.src,
+		},
+		{
+			imageUrl: VSW23.src,
 		},
 	];
 
@@ -45,7 +121,7 @@ export default function MNHPage() {
 			<div className="max-w-screen-xl mx-auto bg-tan-900 ">
 				<div className=" bg-tan-900 ">
 					<h2 className="py-8 text-4xl tracking-tight font-extrabold text-gray-900 bg-tan-900  text-center">
-						Manne House
+						Vesella Woods
 					</h2>
 					<div className="flex flex-col md:grid md:grid-cols-2 h-full gap-4 flex-wrap mx-2 md:mx-0 bg-transparent ">
 						{galleryTab.map((x, index) => {

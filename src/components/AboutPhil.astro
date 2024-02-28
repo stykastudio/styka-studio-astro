@@ -1,0 +1,58 @@
+---
+import { Image } from "astro:assets";
+import Office1 from "../assets/office-long-1.webp";
+import Office2 from "../assets/office-long-2.webp";
+---
+
+<section class="bg-gradient-to-b from-tan-800 to-transparent">
+	<h2
+		class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 text-center"
+	>
+		Our Philisophy
+	</h2>
+	<div
+		class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6 content-center"
+	>
+		<div class="font-light text-gray-500 sm:text-lg">
+			<p class="mb-4">
+				At Styka, we believe in the fusion of artistry, innovation, and
+				client-centricity to craft spaces that resonate with uniqueness and
+				functionality.
+			</p>
+			<p class="mb-4">
+				{" "}
+				We understand that every project is an expression of our clients&#39; aspirations
+				and desires. Hence, our design philosophy revolves around attentive listening
+				and profound collaboration.{" "}
+			</p>
+			<p class="mb-4">
+				From the initial conceptualization to the final execution, we prioritize
+				understanding your distinct needs and preferences. Our team of seasoned
+				architects and designers blend creativity with practicality, ensuring
+				that each design reflects your vision while maximizing functionality and
+				aesthetic appeal.
+			</p>
+			<p class="mb-4">
+				{" "}
+				With a commitment to professionalism and excellence, we strive to transform
+				your dreams into tangible realities, creating spaces that inspire and enrich
+				lives. At Styka, your satisfaction and fulfillment remain our utmost priority
+				throughout the journey of design and construction.
+			</p>
+		</div>
+		<div class="grid grid-cols-2 gap-4 mt-8">
+			<Image
+				class="w-full rounded-lg"
+				src={Office2}
+				quality={50}
+				alt="office content 1"
+			/>
+			<Image
+				class="mt-4 w-full lg:mt-10 rounded-lg"
+				src={Office1}
+				quality={50}
+				alt="office content 2"
+			/>
+		</div>
+	</div>
+</section>

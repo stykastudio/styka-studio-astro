@@ -2,29 +2,54 @@ import { useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/styles.css";
-import mnh1 from "../assets/mnh/mnh1.webp";
-import mnh2 from "../assets/mnh/mnh2.webp";
-import mnh3 from "../assets/mnh/mnh3.webp";
-import mnh4 from "../assets/mnh/mnh4.webp";
+import adh1 from ".../../../assets/adh/adh1.webp";
+import adh2 from ".../../../assets/adh/adh2.webp";
+import adh3 from ".../../../assets/adh/adh3.webp";
+import adh4 from ".../../../assets/adh/adh4.webp";
+import adh5 from ".../../../assets/adh/adh5.webp";
+import adh6 from ".../../../assets/adh/adh6.webp";
+import adh7 from ".../../../assets/adh/adh7.webp";
+import adh8 from ".../../../assets/adh/adh8.webp";
+import adh9 from ".../../../assets/adh/adh9.webp";
+import adh10 from ".../../../assets/adh/adh10.webp";
 
-export default function MNHPage() {
+export default function ADHPage() {
 	const [open, setOpen] = useState(false);
 	const [image, setImage] = useState("");
 
 	const galleryTab = [
 		// you can add more images if you want
 		{
-			imageUrl: mnh1.src,
+			imageUrl: adh1.src,
 		},
 		{
-			imageUrl: mnh2.src,
+			imageUrl: adh2.src,
 		},
 		{
-			imageUrl: mnh3.src,
+			imageUrl: adh3.src,
 		},
 		{
-			imageUrl: mnh4.src,
+			imageUrl: adh4.src,
 		},
+        {
+			imageUrl: adh5.src,
+		},
+        {
+			imageUrl: adh6.src,
+		},
+        {
+			imageUrl: adh7.src,
+		},
+        {
+			imageUrl: adh8.src,
+		},
+        {
+			imageUrl: adh9.src,
+		},
+        {
+			imageUrl: adh10.src,
+		},
+
 	];
 
 	const slides = galleryTab.map((item) => ({
@@ -45,7 +70,7 @@ export default function MNHPage() {
 			<div className="max-w-screen-xl mx-auto bg-tan-900 ">
 				<div className=" bg-tan-900 ">
 					<h2 className="py-8 text-4xl tracking-tight font-extrabold text-gray-900 bg-tan-900  text-center">
-						Manne House
+						Aadhya
 					</h2>
 					<div className="flex flex-col md:grid md:grid-cols-2 h-full gap-4 flex-wrap mx-2 md:mx-0 bg-transparent ">
 						{galleryTab.map((x, index) => {

@@ -1,0 +1,50 @@
+---
+import { Image } from "astro:assets";
+import Button from "./ui/Button.astro";
+import AboutHeroImage from "../assets/about-hero.webp";
+---
+
+<section class="bg-tan-900">
+	<div
+		class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12"
+	>
+		<div class="mr-auto place-self-center lg:col-span-7">
+			<h1
+				class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl"
+			>
+				Let&#39;s Create{" "}
+				<span
+					class="bg-gradient-to-r from-tan-300 to-tan-400 bg-clip-text text-transparent"
+				>
+					Together
+				</span>
+			</h1>
+
+			<p
+				class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl"
+			>
+				Whether you need a new building, a renovation, or a makeover, we have
+				the competence, resources, and the tools to make it happen.
+			</p>
+
+			<a href="/contact"
+				><Button
+					size="md"
+					style="primary"
+					class="flex gap-1 items-center justify-center"
+				>
+					<div class="text-sm">Get Started</div>
+				</Button></a
+			>
+		</div>
+		<div class="py-4 lg:mt-0 lg:col-span-5 lg:flex">
+			<Image
+				src={AboutHeroImage}
+				alt="mockup"
+				quality={50}
+				width={600}
+				class="rounded-lg"
+			/>
+		</div>
+	</div>
+</section>

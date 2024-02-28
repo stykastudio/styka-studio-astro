@@ -1,0 +1,112 @@
+---
+import { Image } from "astro:assets";
+import ManneHouse from "../assets/manne-house-int.webp";
+import { DraftingCompass, PencilRuler, Home, Drill } from "lucide-astro";
+---
+
+<div class="bg-tan-900">
+	<div class="max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8 lg:py-10 mx-auto">
+		<div class="aspect-w-16 aspect-h-7">
+			<Image
+				class="w-full object-cover rounded-xl mx-auto"
+				src={ManneHouse}
+				quality={50}
+				height={500}
+				alt="Image Description"
+			/>
+		</div>
+		<div class="my-5 lg:mt-16 grid lg:grid-cols-2 gap-8 lg:gap-12">
+			<div class="lg:col-span-1">
+				<h1
+					class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl"
+				>
+					Unlock Your Dream Space
+				</h1>
+				<p class="mt-2 md:mt-4 text-jet">
+					Your One-Stop Destination for Architectural Brilliance and Interior
+					Elegance
+				</p>
+			</div>
+
+			<div class="grid w-full grid-cols-2 gap-8">
+				<a href="#" class="group flex gap-4 items-center">
+					<div
+						class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-tan text-white hover:text-tan shadow-lg transition duration-100 group-hover:bg-jet group-active:bg-jet md:h-12 md:w-12"
+					>
+						<DraftingCompass />
+					</div>
+
+					<div>
+						<h2 class="font-semibold text-jet">
+							Architectural Planning & Design
+						</h2>
+						{
+							/* <p class="text-sm text-jet dark:text-gray-200">
+									Tailored architectural solutions for homes, commercial spaces,
+									and more, crafted by our experienced team of architects.
+								</p> */
+						}
+					</div>
+				</a>
+
+				<a href="#" class="group flex gap-4 items-center">
+					<div
+						class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-tan text-white hover:text-tan shadow-lg transition duration-100 group-hover:bg-jet group-active:bg-jet md:h-12 md:w-12"
+					>
+						{" "}
+						<PencilRuler />
+					</div>
+
+					<div>
+						<h2 class="font-semibold text-jet">
+							Architectural Modelling & Rendering
+						</h2>
+						{
+							/* <p class="text-sm text-jet dark:text-gray-200">
+									Transforming blueprints into stunning visualizations with our
+									expert architectural modeling and rendering services.
+								</p> */
+						}
+					</div>
+				</a>
+
+				<a href="#" class="group flex gap-4 items-center">
+					<div
+						class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-tan text-white hover:text-tan shadow-lg transition duration-100 group-hover:bg-jet group-active:bg-jet md:h-12 md:w-12"
+					>
+						<Home />
+					</div>
+
+					<div>
+						<h2 class="font-semibold text-jet">Interior Design</h2>
+						{
+							/* <p class="text-sm text-jet dark:text-gray-200">
+									From concept to reality, our interior design services bring
+									your vision to life with creativity, precision, and attention
+									to detail.
+								</p> */
+						}
+					</div>
+				</a>
+
+				<a href="#" class="group flex gap-4 items-center">
+					<div
+						class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-tan text-white hover:text-tan shadow-lg transition duration-100 group-hover:bg-jet group-active:bg-jet md:h-12 md:w-12"
+					>
+						<Drill />
+					</div>
+
+					<div>
+						<h2 class="font-semibold text-jet">Interiors Execution</h2>
+						{
+							/* <p class="text-sm text-jet dark:text-gray-200">
+									Professional execution of interior design plans, ensuring
+									timely delivery and flawless implementation for your space.
+								</p> */
+						}
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
