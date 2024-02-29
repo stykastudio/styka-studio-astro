@@ -1,4 +1,5 @@
 ---
+import "aos/dist/aos.css"; // AOS styles
 import { DraftingCompass, PencilRuler, Home, Drill } from "lucide-astro";
 ---
 
@@ -10,6 +11,7 @@ import { DraftingCompass, PencilRuler, Home, Drill } from "lucide-astro";
 					<div>
 						<h2
 							class="font-semibold text-gray-900 text-3xl md:text-4xl lg:text-5xl text-center"
+							data-aos="fade-up"
 						>
 							Our Services
 						</h2>
@@ -25,7 +27,7 @@ import { DraftingCompass, PencilRuler, Home, Drill } from "lucide-astro";
 					</div>
 
 					<div class="space-y-6 lg:space-y-10">
-						<div class="flex">
+						<div class="flex" data-aos="fade-up">
 							<DraftingCompass
 								class="flex-shrink-0 mt-2 size-6 text-gray-800"
 							/>
@@ -42,7 +44,7 @@ import { DraftingCompass, PencilRuler, Home, Drill } from "lucide-astro";
 							</div>
 						</div>
 
-						<div class="flex">
+						<div class="flex" data-aos="fade-up">
 							<PencilRuler class="flex-shrink-0 mt-2 size-6 text-gray-800" />
 							<div class="ms-5 sm:ms-8">
 								<h3 class="text-base sm:text-lg font-semibold text-gray-800">
@@ -56,7 +58,7 @@ import { DraftingCompass, PencilRuler, Home, Drill } from "lucide-astro";
 							</div>
 						</div>
 
-						<div class="flex">
+						<div class="flex" data-aos="fade-up">
 							<Home class="flex-shrink-0 mt-2 size-6 text-gray-800" />
 							<div class="ms-5 sm:ms-8">
 								<h3 class="text-base sm:text-lg font-semibold text-gray-800">
@@ -70,7 +72,7 @@ import { DraftingCompass, PencilRuler, Home, Drill } from "lucide-astro";
 								</p>
 							</div>
 						</div>
-						<div class="flex">
+						<div class="flex" data-aos="fade-up">
 							<Drill class="flex-shrink-0 mt-2 size-6 text-gray-800 e" />
 							<div class="ms-5 sm:ms-8">
 								<h3 class="text-base sm:text-lg font-semibold text-gray-800">
@@ -89,3 +91,10 @@ import { DraftingCompass, PencilRuler, Home, Drill } from "lucide-astro";
 		</div>
 	</div>
 </div>
+<script>
+	import { aosInit } from "../js/aos";
+
+	// runs on initial page load
+	aosInit();
+	document.addEventListener("astro:after-swap", aosInit);
+</script>
