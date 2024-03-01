@@ -1,5 +1,4 @@
 ---
-import "aos/dist/aos.css"; // AOS styles
 import SFH from "../assets/sripuram-farmhouse.webp";
 import Button from "./ui/Button.astro";
 ---
@@ -22,7 +21,6 @@ import Button from "./ui/Button.astro";
 >
 	<div
 		class="flex flex-col justify-center items-center sm:max-w-screen-lg px-2 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto bg-jet-300 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-50 saturate-100 backdrop-contrast-100 sm:rounded-xl"
-		data-aos="fade-up"
 	>
 		<h2
 			class="font-semibold text-tan-900 text-3xl md:text-4xl lg:text-5xl text-center text-shadow shadow-jet-100"
@@ -53,10 +51,3 @@ import Button from "./ui/Button.astro";
 		</a> -->
 	</div>
 </div>
-<script>
-	import { aosInit } from "../js/aos";
-
-	// runs on initial page load
-	aosInit();
-	document.addEventListener("astro:after-swap", aosInit);
-</script>
