@@ -1,11 +1,12 @@
 ---
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
 import { ViewTransitions } from "astro:transitions";
-import Navbar from "../components/Navbar.astro";
+// import Navbar from "../components/Navbar.astro";
+import Navbar from "../components/navbar/Navbar.astro";
 import Footer from "../components/Footer.astro";
 import "@fontsource-variable/inter";
 import "@fontsource-variable/schibsted-grotesk";
@@ -13,18 +14,24 @@ import "@fontsource-variable/schibsted-grotesk";
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/src/assets/favicon.ico" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-		<ViewTransitions />
-	</head>
-	<body>
-		<Navbar />
-		<slot />
-		<Footer />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="From architectural planning to interior execution, our team of experienced professionals crafts unique and impactful designs to bring your vision to life."
+    />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <ViewTransitions />
+  </head>
+  <body>
+    <Navbar />
+    <slot />
+    <Footer />
+  </body>
 </html>
